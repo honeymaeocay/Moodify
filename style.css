@@ -1,0 +1,215 @@
+/* Base reset */
+* 
+
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+     
+    background-image: url('bgg.png'); 
+    background-position: center; 
+    background-color: #B2E100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+}
+
+/* Logo container */
+.logo {
+    display: flex; /* Enables flexbox layout */
+    align-items: left; /* Vertically center-aligns the logo and title */
+    justify-content: left; /* Horizontally centers the content */
+    gap: 20px; /* Space between the logo and the text */
+    padding-left: 50px;
+}
+
+/* Optional: Adjust the size of the image if needed */
+.logo img {
+    width: 50px; /* Adjust the size to fit your design */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Adjust the size of the text */
+.logo h1 {
+    font-weight: 100;
+    font-size: 32px; /* Adjust the font size */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Main container */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1500px;
+    background: #FBFFEC;
+    border: 8px solid #000000;
+    box-shadow: 15px 23px 0px #000000;
+    border-radius: 122px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 40px;
+    line-height: 59px;
+    margin-bottom: 10px;
+}
+
+/* Mood Input Description */
+p {
+    font-size: 25px;
+    line-height: 44px;
+    
+}
+
+/* Mood Input */
+input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 6px solid #000000;
+    border-radius: 100px;
+    background-color: #9C8BE7;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 100;
+    box-shadow: 6px 7px 0px #000000;
+    margin-bottom: 10px;
+}
+
+/* Generate Button */
+button#generatePlaylistBtn {
+    padding: 10px 20px;
+    border: 6px solid #000000;
+    border-radius: 100px;
+    background-color: #B2E100;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px 7px 0px #000000;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+  }
+  
+
+/* Container to align buttons side by side */
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between the buttons */
+    margin-bottom: 20px;
+}
+
+/* Style for "Vibe It Up" button */
+button#generatePlaylistBtn {
+    padding: 10px 20px;
+    border: 6px solid #000000;
+    border-radius: 100px;
+    background-color: #B2E100; /* Color for "Vibe It Up" button */
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px 7px 0px #000000;
+    transition: background-color 0.3s;
+}
+
+button#generatePlaylistBtn:hover {
+    background-color: #A2D000; /* Hover color for "Vibe It Up" button */
+}
+
+/* Style for "Generate Again" button */
+button#generateAgainBtn {
+    padding: 10px 20px;
+    border: 6px solid #000000;
+    border-radius: 100px;
+    background-color: #FF6347; /* Different color for "Generate Again" button */
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px 7px 0px #000000;
+    transition: background-color 0.3s;
+}
+
+button#generateAgainBtn:hover {
+    background-color: #E5533B; /* Hover color for "Generate Again" button */
+}
+
+
+
+
+/* Playlist Container */
+#playlistContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Initially hide the playlist container */
+#playlistContainer {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Playlist Button */
+button.playlist-btn {
+    width: 500px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    padding: 10px;
+    border: 6px solid #000000;
+    border-radius: 100px;
+    background-color: #6953DA;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 6px 7px 0px #000000;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block; /* Ensures it behaves like a block element */
+}
+
+/* Hover effect */
+button.playlist-btn:hover {
+    background-color: #5942b8;
+}
+
+/* Aligning the list to center */
+ul#playlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns buttons horizontally */
+}
+
+
+
+/* Footer Note */
+.footer-note {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodify</title>
+    <link rel="icon" href="Moodify.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container for the home screen -->
+    <div class="container">
+        <!-- Title -->
+         <br><br>
+        <div class="logo">
+            <img src="Moodify.png" alt="Logo"> 
+            <h1git>Moodify</h1git>
+        </div>
+       
+        <br><br><br><br><br>
+        <!-- Mood Input Section -->
+        <p>Hey Moodies! Got a mood?</p>
+        <p>Let’s match it with a playlist that slaps!</p>
+
+        <br><br><br>
+
+        <input type="text" id="moodInput" placeholder="Mood drop: broken, happy, or hyped?" />
+
+        <br><br><br>
+
+    
+        <!-- Generate Playlist Button -->
+<div id="buttonContainer">
+    <button id="generatePlaylistBtn">Vibe It Up!</button>
+    <button id="generateAgainBtn" style="display: none;">Vibe Again?</button> 
+</div>
+
+
+        
+        <br><br><br>
+       
+        <!-- Display Area for Playlists -->
+        <div id="playlistContainer">
+            <h2>Generated Playlist:</h2>
+
+            <br>
+            
+            <ul id="playlist">
+                <!-- Dynamic content will be injected here -->
+            </ul>
+        </div>
+
+        <br><br>
+        <!-- Footer Note -->
+        <p class="footer-note">developed by ara & honey ;)</p>
+        <br><br>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    <i class="fa fa-step-forward" aria-hidden="true"></i>
+</body>
+
+</html>
